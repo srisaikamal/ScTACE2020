@@ -1,550 +1,648 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
-<!-- Mirrored from icrs2021dublin.ucd.ie/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 00:09:05 GMT -->
-<head runat="server">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="favicon.ico">
+  <head runat="server">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="Media/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="Media/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
     <!--- Conf CSS -->
-    <link href="Media/css/stylesheet.css" rel="stylesheet">
+    <link href="Media/css/stylesheet.css" rel="stylesheet" />
     <title>2021 International Conference on Resource Sustainability</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Preloader -->
     <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
-            </div>
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_four"></div>
         </div>
-    </div><!--End off Preloader -->
-    <!-- Navigation -->
-	<!--<nav class="navbar navbar-expand-lg navbar-dark bg-blue static-top" style="
-    height: 220px;
-    background-color: yellow!important;color:black;
-    padding-top:110px;">
-	<div class="container" style="text-align:left">
-		<p style="padding-top:20px">Alert:<br><span style="color:gray"> March 23, 2020</span><br>
-	<a href="Sub/coronavirus.html" style="color:black;padding-top:20px;font-size:1.5em">COVID-19 (CORONAVIRUS): ICRS 2020 IS NOW POSTPONED TO 20-22 JULY 2021. Read more...</a>
-	</p>
-	</div>
-	</nav>-->
+      </div>
+    </div>
+    <!-- <img
+            src="Media/images/logo.png"
+            alt="icRS2021"
+            class="img-thumbnail"
+        /> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue static-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="Media/images/logo.png" alt="icRS2021" class="img-thumbnail" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" id="nav-item-1" href="#">
-                            HOME
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-2" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-8" href="Sub/committees.html">COMMITTEE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-8" href="Sub/keynote.html">KEYNOTES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-3" href="#">SUBMISSION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-4" href="Sub/registration.html">REGISTRATION</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" id="nav-item-8" href="Sub/sponsors.html">SPONSORS</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" id="nav-item-8" href="Sub/publication.html">PUBLICATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-6" href="#">INFORMATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-item-7" href="Sub/contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="nav-item-1" href="#">
+                HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+    
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Page Content -->
 
     <section id="home">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="mt-5 fade-in">2021 International Conference on Resource Sustainability</h1>
-                    <p class="lead fade-in">
-                        20 - 22 July 2021 <br />
-                        University College Dublin, Ireland
-                    </p>
-					<button type="button" class="vertical-btn btn "><i class="fas fa-caret-left"></i> Key Dates</button>
-					<a href="Sub/submission.html" class="btn btn-success horizon-btn fade-in"><i class="far fa-check-circle"></i> Submission</a>
-                    <a href="Sub/registration.html" class="btn btn-danger horizon-btn fade-in"><i class="far fa-check-circle"></i> Registration</a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="mt-5 fade-in">2020 NATIONAL VIRTUAL CONFERENCE</h1>
+            <p class="lead fade-in">
+              Sustainable Construction Technologies & <br />
+              Advancements in Civil Engineering
+            </p>
 
+            <p class="parasecond">
+              9th October – 10th October 2020 Department of Civil Engineering
+              Shri Vishnu Engineering College for Women (Autonomous), Bhimavaram
+            </p>
+            <button type="button" class="vertical-btn btn">
+              <i class="fas fa-caret-left"></i> Key Dates
+            </button>
+            <!-- <a
+              href="Sub/submission.html"
+              class="btn btn-success horizon-btn fade-in"
+              ><i class="far fa-check-circle"></i> Submission</a
+            > -->
+            <a
+              href="#"
+              class="btn btn-danger horizon-btn fade-in mybtn"
+              ><i class="far fa-check-circle"></i> Registration</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="main_about text-center">
-                        <h1>Welcome to icRS 2021!</h1>
-                        <h2 class="text-white"></h2>
-                        <h3 class="text-black">
-                            The International Conference on Resource Sustainability (icRS), sponsored by Resources, Conservation & Recycling journal, is a worldwide forum in which the latest research and practice in resource sustainability are shared, discussed and promoted. icRS 2021 aims to provide collaborative opportunities for researchers and industrial practitioners to advance the critical role of resources in the Circular Economy from the perspective of both underdeveloped, developing and developed economies. icRS 2021 will encourage interdisciplinarity, and welcome contributions that span the natural sciences, social sciences, and engineering. We define resources broadly to include physical resources, biological resources, and "misplaced" resources.
-                        </h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="main_about text-center">
+              <h1>Welcome to ScTACE 2020!</h1>
+              <h2 class="text-white"></h2>
+              <h3 class="text-black">
+                The National Virtual Conference on Sustainable Construction
+                Technologies & Advancements in Civil Engineering, ScTACE 2020
+                aims to provide collaborative opportunities for researchers,
+                leading academic scientists, research scholars and industrial
+                practitioners in which the latest research and practice in
+                sustainable construction Technologies and advancements in civil
+                engineering viz., emphasis on Structures, Transportation,
+                Geotechnical, Environmental, Remote Sensing and so on are
+                shared, discussed and promoted. ScTACE 2020 will encourage
+                interdisciplinarity and welcome contributions that span the
+                engineering and allow researchers and practitioners to exchange
+                ideas on the latest developments in sustainable construction
+                technologies and advances in civil engineering. The conference
+                will be the ideal opportunity to foster networking,
+                collaboration and joint efforts among the participants, and
+                thereby to advance the theory and practice as well as to
+                identify major trends and advancements in the following core
+                areas, but not limited to,
+              </h3>
 
-                        <a href="Sub/About.html" class="btn btn-lg btn-success m-top-100">Read More...</a>
-                    </div>
-                </div>
-                <div class="col-sm"></div>
-                <div class="col-md-5">
-                    <img id="about-img" alt="icRS2021" src="Media/images/about-img.png">
-                </div>
+              <a href="Sub/About.html" class="btn btn-lg btn-success m-top-100"
+                >Read More...</a
+              >
             </div>
+          </div>
+          <div class="col-sm"></div>
+          <div class="col-md-5">
+            <img
+              id="about-img"
+              alt="icRS2021"
+              src="Media/images/about-img.png"
+            />
+          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- <section id="submission">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="submission_item">
+              <div class="head_title">
+                <h2>Call For Contributions</h2>
+              </div>
+              <p>
+                icRS 2021 will accept two types of submissions, i.e. full
+                conference articles, and extended abstracts. Editors from
+                supporting journals will evaluate both oral and poster
+                presentations during the conference and invite selected
+                presentations to submit their full extended papers for a special
+                issue.
+                <br /><br />For more details about submission procedure please
+                click <a href="Sub/submission.html"> Here </a>.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="steps-timeline">
+              <div class="steps-one">
+                <img class="steps-img" src="Media/images/timeline.png" alt="" />
+                <h3 class="steps-name">
+                  December 1, 2020
+                </h3>
+                <p class="steps-description">
+                  Deadline for submitting contributions
+                </p>
+              </div>
+
+              <div class="steps-two">
+                <img class="steps-img" src="Media/images/timeline.png" alt="" />
+                <h3 class="steps-name">
+                  January 15, 2021
+                </h3>
+                <p class="steps-description">
+                  Notification to authors
+                </p>
+              </div>
+
+              <div class="steps-three">
+                <img class="steps-img" src="Media/images/timeline.png" alt="" />
+                <h3 class="steps-name">
+                  Febuary 07, 2021
+                </h3>
+                <p class="steps-description">
+                  Final revised contribution submission
+                </p>
+              </div>
+              <div class="steps-four">
+                <img class="steps-img" src="Media/images/timeline.png" alt="" />
+
+                <h3 class="steps-name">
+                  March 22, 2021
+                </h3>
+                <p class="steps-description">
+                  Early bird registration deadline
+                </p>
+              </div>
+              <div class="steps-five">
+                <img class="steps-img" src="Media/images/timeline.png" alt="" />
+                <h3 class="steps-name">
+                  October 1, 2021
+                </h3>
+                <p class="steps-description">
+                  Deadline for submitting papers to journal special issues (by
+                  invitation only)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
-    <section id="submission">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="submission_item">
-                        <div class="head_title">
-                            <h2>Call For Contributions</h2>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                  
+                    <div class="col-md-4">
+                      <div class="item-box-blog">
+                        <div class="item-box-blog-image">
+                          <figure>
+                            <img
+                              alt="Hellweg"
+                              src="Media/images/keynote/Hellweg.jpg"
+                            />
+                          </figure>
                         </div>
-                        <p>
-                            icRS 2021 will accept two types of submissions, i.e. full conference articles, and extended abstracts. Editors from supporting journals will evaluate both oral and poster presentations during the conference and invite selected presentations to submit their full extended papers for a special issue. 
-                            <br /><br />For more details about submission procedure please click <a href="Sub/submission.html"> Here </a>.
-                        </p>
+                        <div class="item-box-blog-body">
+                          <div class="item-box-blog-heading">
+                            <h5>Stefanie Hellweg</h5>
+                          </div>
 
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="steps-timeline">
-
-                        <div class="steps-one">
-                            <img class="steps-img" src="Media/images/timeline.png" alt="" />
-                            <!--<h3 class="steps-name" style="text-decoration: line-through;">
-                                October 30, 2020
-                            </h3> -->
-							<h3 class="steps-name">
-                                December 1, 2020
-                            </h3>
-                            <p class="steps-description">
-                                Deadline for submitting contributions
-                            </p>
-                        </div>
-
-                        <div class="steps-two">
-                            <img class="steps-img" src="Media/images/timeline.png" alt="" />
-                            <h3 class="steps-name">
-                                January 15, 2021
-                            </h3>
-                            <p class="steps-description">
-                                Notification to authors
-                            </p>
-                        </div>
-
-                        <div class="steps-three">
-                            <img class="steps-img" src="Media/images/timeline.png" alt="" />
-                            <h3 class="steps-name">
-                                Febuary 07, 2021
-                            </h3>
-                            <p class="steps-description">
-                                Final revised contribution submission
-                            </p>
-                        </div>
-                        <div class="steps-four">
-                            <img class="steps-img" src="Media/images/timeline.png" alt="" />
-                            <!--<h3 class="steps-name" style="text-decoration: line-through;">
-                                March 01, 2021
-                            </h3>-->
-							 <h3 class="steps-name">
-                                March 22, 2021
-                            </h3>
-                            <p class="steps-description">
-                                Early bird registration deadline
-                            </p>
-                        </div>
-                        <div class="steps-five">
-                            <img class="steps-img" src="Media/images/timeline.png" alt="" />
-                            <h3 class="steps-name">
-                                October 1, 2021
-                            </h3>
-                            <p class="steps-description">
-                                Deadline for submitting papers to journal special issues (by invitation only)
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="accommodation">
-        <div class="container">
-            <div class="row blog">
-                <div class="col-md-12">
-                    <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#blogCarousel" data-slide-to="1"></li>
-                        </ol>
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <!--<div class="col-md-4">
-                                        <div class="item-box-blog">
-                                            <div class="item-box-blog-image">
-
-                                                <figure> <img alt="Brennan" src="Media/images/keynote/Shay%20Brennan.jpg"> </figure>
-                                            </div>
-                                            <div class="item-box-blog-body">
-
-                                                <div class="item-box-blog-heading">
-
-                                                    <h5>Shay Brennan</h5>
-
-                                                </div>
-
-                                                <div class="item-box-blog-data">
-                                                    <p>Cathaoirleach of Dún Laoghaire-Rathdown County Council, Dublin, Ireland</p>
-                                                </div>
-
-                                                <div class="item-box-blog-text">
-                                                    <p>Shay Brennan is the Cathaoirleach of Dún Laoghaire- Rathdown County Council. He was the first Councillor elected in the Dundrum ward in the 2014 local elections...</p>
-                                                </div>
-                                                <div class="mt"> <a href="Sub/keynote.html" tabindex="0" class="btn btn-lg btn-success m-top-100">Read More</a> </div>
-
-                                            </div>
-                                        </div>
-                                    </div>-->
-                                    <div class="col-md-4">
-                                        <div class="item-box-blog">
-                                            <div class="item-box-blog-image">
-
-                                                <figure> <img alt="Hellweg" src="Media/images/keynote/Hellweg.jpg"> </figure>
-                                            </div>
-                                            <div class="item-box-blog-body">
-
-                                                <div class="item-box-blog-heading">
-
-                                                    <h5>Stefanie Hellweg</h5>
-
-                                                </div>
-
-                                                <div class="item-box-blog-data">
-                                                    <p>Professor of Ecological Systems Design at the Swiss Federal Institute of Technology, Zurich</p>
-                                                </div>
-
-                                                <div class="item-box-blog-text">
-                                                    <p>Stefanie Hellweg is full professor for ecological systems design at the Institute of Environmental Engineering of ETH Zurich (Switzerland)...</p>
-                                                </div>
-                                                <div class="mt"> <a href="Sub/keynote.html" tabindex="0" class="btn btn-lg btn-success m-top-100">Read More</a> </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="item-box-blog">
-                                            <div class="item-box-blog-image">
-                                                <figure> <img alt="horvath" src="Media/images/keynote/horvath.jpg"> </figure>
-                                            </div>
-                                            <div class="item-box-blog-body">
-
-                                                <div class="item-box-blog-heading">
-
-                                                    <h5>Arpad Horvath</h5>
-
-                                                </div>
-
-                                                <div class="item-box-blog-data">
-                                                    <p>Professor of Civil and Environmental Engineering at the University of California, Berkeley, USA</p>
-                                                </div>
-
-                                                <div class="item-box-blog-text">
-                                                    <p>Arpad Horvath is the L. E. Peirano Professor of Civil and Environmental Engineering at the University of California, Berkeley...</p>
-                                                </div>
-                                                <div class="mt"> <a href="Sub/keynote.html" tabindex="0" class="btn btn-lg btn-success m-top-100">Read More</a> </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-md-4">
-                                        <div class="item-box-blog">
-                                            <div class="item-box-blog-image">
-
-                                                <figure> <img alt="Koh" src="Media/images/keynote/Lenny%20Koh.jpg"> </figure>
-                                            </div>
-                                            <div class="item-box-blog-body">
-
-                                                <div class="item-box-blog-heading">
-
-                                                    <h5>Lenny Koh</h5>
-
-                                                </div>
-
-                                                <div class="item-box-blog-data">
-                                                    <p>Professor in Operations Management at the University of Sheffield Management School</p>
-                                                </div>
-
-                                                <div class="item-box-blog-text">
-                                                    <p>Professor Lenny Koh is the Founder and Director of the Advanced Resource Efficiency Centre (AREC) at The University of Sheffield...</p>
-                                                </div>
-                                                <div class="mt"> <a href="Sub/keynote.html" tabindex="0" class="btn btn-lg btn-success m-top-100">Read More</a> </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-                            <div class="carousel-item ">
-                                <div class="row">
-                                    
-                                    <div class="col-md-4">
-                                        <div class="item-box-blog">
-                                            <div class="item-box-blog-image">
-
-                                                <figure> <img alt="Sutherland" src="Media/images/keynote/Sutherland.jpg"> </figure>
-                                            </div>
-                                            <div class="item-box-blog-body">
-
-                                                <div class="item-box-blog-heading">
-
-                                                    <h5>John W. Sutherland</h5>
-
-                                                </div>
-
-                                                <div class="item-box-blog-data">
-                                                    <p>Professor and Fehsenfeld Family Head Environmental and Ecological Engineering Purdue University</p>
-                                                </div>
-
-                                                <div class="item-box-blog-text">
-                                                    <p>Dr. John W. Sutherland is the Fehsenfeld Family Head of Environmental and Ecological Engineering (EEE) at Purdue University...</p>
-                                                </div>
-                                                <div class="mt"> <a href="Sub/keynote.html" tabindex="0" class="btn btn-lg btn-success m-top-100">Read More</a> </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-                        </div>
-                        <!--.carousel-inner-->
-                    </div>
-                    <!--.Carousel-->
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="info">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="info_item">
-
-                        <h2>General Information</h2>
-
-                        <p>
-                            Here you can get information about The Conference Venue,
-                            brief history of Dublin, Touristic places, Hotels, Travel information and also Visa requirements.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="info_item text-center sm-m-top-50">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img src="Media/images/info/venue.jpg" alt="conference venue" />
-                                <h4>Conference Venue</h4>
-                                <h5>O'Brien Centre For Science</h5>
-                                <div class="separator"></div><br>
-                                <a role="button" class="btn btn-outline-info" href="Sub/venue.html">Read More</a>
-                            </div><!-- End off col-md-3 -->
-                            <div class="col-sm-3">
-                                <img src="Media/images/info/dublin.jpg" alt="dublin city information" />
-                                <h4>Dublin City</h4>
-                                <h5>Vibrant Capital That Moves At An Easy Going Pace</h5>
-                                <div class="separator"></div><br>
-                                <a role="button" class="btn btn-outline-info" href="Sub/dublin.html">Read More</a>
-                            </div><!-- End off col-md-3 -->
-                            <div class="col-sm-3">
-                                <img src="Media/images/info/visa.png" alt=" visa requirements" />
-                                <h4>Visa Requirements</h4>
-                                <h5>Including Travelling Information</h5>
-                                <div class="separator"></div><br>
-                                <a role="button" class="btn btn-outline-info" href="Sub/visa.html">Read More</a>
-                            </div><!-- End off col-md-3 -->
-							<div class="col-sm-3">
-                                <img src="Media/images/info/accomodation.png" alt=" accomodation" />
-                                <h4>Where To Stay In Dublin</h4>
-                                <h5>Great Hotel Rooms At Great Rates</h5>
-                                <div class="separator"></div><br>
-                                <a role="button" class="btn btn-outline-info" href="Sub/Hotels.html">Read More</a>
-                            </div><!-- End off col-md-3 -->
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="direction">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <div>
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4768.045774256435!2d-6.223643742095048!3d53.30703637423725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867093147b7b191%3A0xa78e433dfece4bc9!2sO'Brien+Centre+for+Science!5e0!3m2!1sen!2sie!4v1549385370441" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                   
-                </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-	 <section id="sponsors">
-                <div class="container">
-                    <div class="row">
-                                 <div class="col-sm-3">
-                                   <img src="Media/images/sponsors/ucd.png" alt="conference sponsor"/>
-                                </div>
-                                <div class="col-sm-3">
-                                   <img src="Media/images/sponsors/FailteIreland.png" alt="conference sponsor"/>
-                                </div>
-                                <div class="col-sm-3">  
-                                   <img src="Media/images/sponsors/MeetInIreland.png" alt="conference sponsor"/>  
-                                </div>
-                             </div>
-                </div>
-      </section>
-
-
-    <footer id="contact" class="footer">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                     <h5>Get In Touch</h5>
-                    <div>
-                        <div class="item_icon"><i class="fas fa-globe-europe text-white"></i></div>
-                        <div class="item_text">
-                            <h6 class="text-white">Location :</h6>
+                          <div class="item-box-blog-data">
                             <p>
-                                icRS 2021, c/o Conference Organisers Limited 20C The Courtyard Castle Street, Dalkey Co Dublin Ireland
+                              Professor of Ecological Systems Design at the
+                              Swiss Federal Institute of Technology, Zurich
                             </p>
+                          </div>
+
+                          <div class="item-box-blog-text">
+                            <p>
+                              Stefanie Hellweg is full professor for ecological
+                              systems design at the Institute of Environmental
+                              Engineering of ETH Zurich (Switzerland)...
+                            </p>
+                          </div>
+                          <div class="mt">
+                            <a
+                              href="Sub/keynote.html"
+                              tabindex="0"
+                              class="btn btn-lg btn-success m-top-100"
+                              >Read More</a
+                            >
+                          </div>
                         </div>
+                      </div>
                     </div>
-                    <div>
-                        <div class="item_icon"><i class="fa fa-phone text-white"></i></div>
-                        <div class="item_text">
-                            <h6 class="text-white">Phone :</h6>
-                            <p>+353.1.2859033</p>
+                    <div class="col-md-4">
+                      <div class="item-box-blog">
+                        <div class="item-box-blog-image">
+                          <figure>
+                            <img
+                              alt="horvath"
+                              src="Media/images/keynote/horvath.jpg"
+                            />
+                          </figure>
                         </div>
-                    </div>
-                    <div>
-                        <div class="item_icon"><i class="fa fa-envelope text-white"></i></div>
-                        <div class="item_text">
-                            <h6 class="text-white">Email Address :</h6>
-                            <p>events@conferenceorganisers.ie</p>
+                        <div class="item-box-blog-body">
+                          <div class="item-box-blog-heading">
+                            <h5>Arpad Horvath</h5>
+                          </div>
+
+                          <div class="item-box-blog-data">
+                            <p>
+                              Professor of Civil and Environmental Engineering
+                              at the University of California, Berkeley, USA
+                            </p>
+                          </div>
+
+                          <div class="item-box-blog-text">
+                            <p>
+                              Arpad Horvath is the L. E. Peirano Professor of
+                              Civil and Environmental Engineering at the
+                              University of California, Berkeley...
+                            </p>
+                          </div>
+                          <div class="mt">
+                            <a
+                              href="Sub/keynote.html"
+                              tabindex="0"
+                              class="btn btn-lg btn-success m-top-100"
+                              >Read More</a
+                            >
+                          </div>
                         </div>
+                      </div>
                     </div>
+                    <div class="col-md-4">
+                      <div class="item-box-blog">
+                        <div class="item-box-blog-image">
+                          <figure>
+                            <img
+                              alt="Koh"
+                              src="Media/images/keynote/Lenny%20Koh.jpg"
+                            />
+                          </figure>
+                        </div>
+                        <div class="item-box-blog-body">
+                          <div class="item-box-blog-heading">
+                            <h5>Lenny Koh</h5>
+                          </div>
+
+                          <div class="item-box-blog-data">
+                            <p>
+                              Professor in Operations Management at the
+                              University of Sheffield Management School
+                            </p>
+                          </div>
+
+                          <div class="item-box-blog-text">
+                            <p>
+                              Professor Lenny Koh is the Founder and Director of
+                              the Advanced Resource Efficiency Centre (AREC) at
+                              The University of Sheffield...
+                            </p>
+                          </div>
+                          <div class="mt">
+                            <a
+                              href="Sub/keynote.html"
+                              tabindex="0"
+                              class="btn btn-lg btn-success m-top-100"
+                              >Read More</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
-                <div class="col-md-4">
-
-                    <h5>Latest News</h5>
-                    <div>
-                        <div class="item_icon"><i class="far fa-newspaper text-white"></i></div>
-                        <div class="item_text">
-                            <p>We look forward to welcoming you to Dublin, Ireland in July 2021 for the icRS2021</p>
-                            <a href="#">4<sup>th</sup> April 2020</a>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="item-box-blog">
+                        <div class="item-box-blog-image">
+                          <figure>
+                            <img
+                              alt="Sutherland"
+                              src="Media/images/keynote/Sutherland.jpg"
+                            />
+                          </figure>
                         </div>
+                        <div class="item-box-blog-body">
+                          <div class="item-box-blog-heading">
+                            <h5>John W. Sutherland</h5>
+                          </div>
+
+                          <div class="item-box-blog-data">
+                            <p>
+                              Professor and Fehsenfeld Family Head Environmental
+                              and Ecological Engineering Purdue University
+                            </p>
+                          </div>
+
+                          <div class="item-box-blog-text">
+                            <p>
+                              Dr. John W. Sutherland is the Fehsenfeld Family
+                              Head of Environmental and Ecological Engineering
+                              (EEE) at Purdue University...
+                            </p>
+                          </div>
+                          <div class="mt">
+                            <a
+                              href="Sub/keynote.html"
+                              tabindex="0"
+                              class="btn btn-lg btn-success m-top-100"
+                              >Read More</a
+                            >
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!--<div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info_item">
+              <h2>General Information</h2>
+
+              <p>
+                Here you can get information about The Conference Venue, brief
+                history of Dublin, Touristic places, Hotels, Travel information
+                and also Visa requirements.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="info_item text-center sm-m-top-50">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img
+                    src="Media/images/info/venue.jpg"
+                    alt="conference venue"
+                  />
+                  <h4>Conference Venue</h4>
+                  <h5>O'Brien Centre For Science</h5>
+                  <div class="separator"></div>
+                  <br />
+                  <a
+                    role="button"
+                    class="btn btn-outline-info"
+                    href="Sub/venue.html"
+                    >Read More</a
+                  >
+                </div>
+
+                <div class="col-sm-3">
+                  <img
+                    src="Media/images/info/dublin.jpg"
+                    alt="dublin city information"
+                  />
+                  <h4>Dublin City</h4>
+                  <h5>Vibrant Capital That Moves At An Easy Going Pace</h5>
+                  <div class="separator"></div>
+                  <br />
+                  <a
+                    role="button"
+                    class="btn btn-outline-info"
+                    href="Sub/dublin.html"
+                    >Read More</a
+                  >
+                </div>
+    
+                <div class="col-sm-3">
+                  <img
+                    src="Media/images/info/visa.png"
+                    alt=" visa requirements"
+                  />
+                  <h4>Visa Requirements</h4>
+                  <h5>Including Travelling Information</h5>
+                  <div class="separator"></div>
+                  <br />
+                  <a
+                    role="button"
+                    class="btn btn-outline-info"
+                    href="Sub/visa.html"
+                    >Read More</a
+                  >
+                </div>
+  
+                <div class="col-sm-3">
+                  <img
+                    src="Media/images/info/accomodation.png"
+                    alt=" accomodation"
+                  />
+                  <h4>Where To Stay In Dublin</h4>
+                  <h5>Great Hotel Rooms At Great Rates</h5>
+                  <div class="separator"></div>
+                  <br />
+                  <a
+                    role="button"
+                    class="btn btn-outline-info"
+                    href="Sub/Hotels.html"
+                    >Read More</a
+                  >
+                </div>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="direction">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4768.045774256435!2d-6.223643742095048!3d53.30703637423725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867093147b7b191%3A0xa78e433dfece4bc9!2sO'Brien+Centre+for+Science!5e0!3m2!1sen!2sie!4v1549385370441"
+                width="100%"
+                height="500px"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="sponsors">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="Media/images/sponsors/ucd.png" alt="conference sponsor" />
+          </div>
+          <div class="col-sm-3">
+            <img
+              src="Media/images/sponsors/FailteIreland.png"
+              alt="conference sponsor"
+            />
+          </div>
+          <div class="col-sm-3">
+            <img
+              src="Media/images/sponsors/MeetInIreland.png"
+              alt="conference sponsor"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <footer id="contact" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Get In Touch</h5>
+            <div>
+              <div class="item_icon">
+                <i class="fas fa-globe-europe text-white"></i>
+              </div>
+              <div class="item_text">
+                <h6 class="text-white">Location :</h6>
+                <p>
+                  icRS 2021, c/o Conference Organisers Limited 20C The Courtyard
+                  Castle Street, Dalkey Co Dublin Ireland
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="item_icon">
+                <i class="fa fa-phone text-white"></i>
+              </div>
+              <div class="item_text">
+                <h6 class="text-white">Phone :</h6>
+                <p>+353.1.2859033</p>
+              </div>
+            </div>
+            <div>
+              <div class="item_icon">
+                <i class="fa fa-envelope text-white"></i>
+              </div>
+              <div class="item_text">
+                <h6 class="text-white">Email Address :</h6>
+                <p>events@conferenceorganisers.ie</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Latest News</h5>
+            <div>
+              <div class="item_icon">
+                <i class="far fa-newspaper text-white"></i>
+              </div>
+              <div class="item_text">
+                <p>
+                  We look forward to welcoming you to Dublin, Ireland in July
+                  2021 for the icRS2021
+                </p>
+                <a href="#">4<sup>th</sup> April 2020</a>
+              </div>
+            </div>
+          <div>
                         <div class="item_icon"><img src="assets/images/ltst-img-2.jpg" alt="" /></div>
                         <div class="item_text">
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
                             <a href="">21<sup>th</sup> July 2016</a>
                         </div>
                     </div>-->
+          </div>
 
-                </div>
-
-                <div class="col-md-4">
-
-                    <h5>Related Websites</h5>
-                    <ul class="footer_list">
-                        <li class="m-top-20"> <a href="http://www.icrsconf.com/"><i class="far fa-circle text-white"></i> icRS </a><img src="Media/images/logo/logo.png" alt="icRS" /></li>
-                        <li class="m-top-20"> <a href="https://www.ucd.ie/"><i class="far fa-circle text-white"></i> University College Dublin</a><img src="Media/images/logo/ucd.gif" alt="ucd" /></li>
-                        <li class="m-top-20"> <a href="http://www.failteireland.ie/"><i class="far fa-circle text-white"></i> Fáilte Ireland </a><img src="Media/images/logo/failteireland.png" alt="failteireland" /></li>
-
-                    </ul>
-
-                </div>
-
-            </div>
+          <!-- <div class="col-md-4">
+            <h5>Related Websites</h5>
+            <ul class="footer_list">
+              <li class="m-top-20">
+                <a href="http://www.icrsconf.com/"
+                  ><i class="far fa-circle text-white"></i> icRS </a
+                ><img src="Media/images/logo/logo.png" alt="icRS" />
+              </li>
+              <li class="m-top-20">
+                <a href="https://www.ucd.ie/"
+                  ><i class="far fa-circle text-white"></i> University College
+                  Dublin</a
+                ><img src="Media/images/logo/ucd.gif" alt="ucd" />
+              </li>
+              <li class="m-top-20">
+                <a href="http://www.failteireland.ie/"
+                  ><i class="far fa-circle text-white"></i> Fáilte Ireland </a
+                ><img
+                  src="Media/images/logo/failteireland.png"
+                  alt="failteireland"
+                />
+              </li>
+            </ul>
+          </div> -->
         </div>
-        <div class=" footer2 text-center">
-            <div class="col-md-12">
-                <p data-wow-duration="1s">
-                    Made by
-                    <a target="_blank" href="#">icRS Conf 2021.</a>
-                     All Rights Reserved
-                </p>
-            </div>
+      </div>
+      <div class="footer2 text-center">
+        <div class="col-md-12">
+          <p data-wow-duration="1s">
+            Made by
+            <a target="_blank" href="#">ScTACE 2020.</a>
+            All Rights Reserved
+          </p>
         </div>
-    </footer>
-
+      </div>
+    </footer> -->
 
     <!--JavaScript -->
     <script src="Media/js/jquery/jquery.min.js"></script>
     <script src="Media/css/js/bootstrap.bundle.min.js"></script>
     <script src="Media/js/script.js"></script>
+  </body>
 
-</body>
-
-<!-- Mirrored from icrs2021dublin.ucd.ie/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 00:09:31 GMT -->
+  <!-- Mirrored from icrs2021dublin.ucd.ie/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 00:09:31 GMT -->
 </html>
-
