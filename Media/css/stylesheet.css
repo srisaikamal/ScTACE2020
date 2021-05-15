@@ -44,14 +44,7 @@ button.bg-blue:focus {
   width: 100%;
   height: 100% !important;
 }
-@media (max-width: 600px) {
-  h1.mt-5 {
-    font-size: 60px !important;
-  }
-  #home .row p {
-    font-size: 30px !important;
-  }
-}
+
 #home .row h1 {
   position: relative;
   font-size: 70px;
@@ -965,4 +958,20 @@ a.hotel-title {
 .customBtn:hover {
   background-color: #57b9a8;
   color: white;
+}
+
+.responsiveTitle {
+  font-size: 40px !important;
+}
+
+.responsiveText {
+  font-size: 25px !important;
+  line-height: 36px;
+}
+@media only screen and (max-width: 425px) {
+  .responsiveTitle {
+    font-size: 20px !important;
+    line-height: 36px !important;
+    margin-top: 20px;
+  }
 }
