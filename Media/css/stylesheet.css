@@ -975,3 +975,14 @@ a.hotel-title {
     margin-top: 20px;
   }
 }
+
+.customUILI {
+  list-style: none;
+  margin-left: -30px;
+  margin-bottom: 10px;
+}
+
+.customUILI-li:before {
+  content: "✓";
+  margin-right: 10px;
+}
