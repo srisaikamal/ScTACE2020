@@ -986,3 +986,18 @@ a.hotel-title {
   content: "✓";
   margin-right: 10px;
 }
+
+.myBtn {
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #10ac84;
+  color: white;
+  cursor: pointer;
+}
+
+.outlinedBTN {
+  background-color: white;
+  border: 3px solid #10ac84;
+  color: #10ac84 !important;
+}
