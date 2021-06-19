@@ -35,9 +35,11 @@ button.bg-blue:focus {
 /*Container*/
 
 #home {
-  background: url("https://images.pexels.com/photos/220762/pexels-photo-220762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    no-repeat !important;
-  background-size: cover;
+  background: url("../images/bg_new1.jpg") no-repeat !important;
+  /* background-size: cover; */
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
   padding-top: 5%;
   padding-bottom: 10%;
@@ -1000,4 +1002,8 @@ a.hotel-title {
   background-color: white;
   border: 3px solid #10ac84;
   color: #10ac84 !important;
+}
+
+.customNavbar {
+  background-color: black;
 }
