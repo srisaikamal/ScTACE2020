@@ -1007,3 +1007,7 @@ a.hotel-title {
 .customNavbar {
   background-color: black;
 }
+
+.bg-light {
+  background-color: #dff9fb !important;
+}
