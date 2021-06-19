@@ -188,8 +188,8 @@ button.bg-blue:focus {
   font-size: 40px;
   font-weight: bold;
   line-height: 60px;
-  color: #7d8e52;
-  float: left;
+  color: #ff793f;
+  text-align: center;
 }
 
 #about h2 {
