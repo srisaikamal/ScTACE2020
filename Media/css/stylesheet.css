@@ -14,7 +14,9 @@
   width: 100%;
 }
 a.nav-link {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
 }
 .bg-blue {
   background-color: transparent !important;
@@ -990,18 +992,22 @@ a.hotel-title {
 }
 
 .myBtn {
-  width: 40%;
+  width: 20%;
   padding: 20px;
   border-radius: 10px;
-  background-color: #10ac84;
-  color: white;
+  background-color: #ff7f50;
+  color: white !important;
   cursor: pointer;
+  border-radius: 50px;
+  border: 3px solid white;
 }
 
 .outlinedBTN {
-  background-color: white;
-  border: 3px solid #10ac84;
-  color: #10ac84 !important;
+  width: 20%;
+  background-color: #ff7f50;
+  border: 3px solid white;
+  color: white !important;
+  border-radius: 50px;
 }
 
 .customNavbar {
